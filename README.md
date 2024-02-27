@@ -14,6 +14,8 @@ Over the course of the first year, the baby started eating other foods as well. 
 
 The script included in this repository reads the data from CSV, transforms it and plots the data in a scatter- and a line plot. The scatterplot shows the days since birth (x-axis) and time of day (y-axis) which nicely shows the arrival of rythm and the changes from 5 gradually down to 2 bottles a day. The line plot aggregates the food volumes by 24 hour day. This plot shows the rapid rise in milk volume the baby needed - it has always been and still is a very hungry baby, the occasional plateaus and gradual decline of milk volume consumed. 
 
+## RESULT
+
 ![baby-food-quantity](scatterplot.png "Food Quantity in the first year of a baby's life")
 
 ## REPLICATION
