@@ -60,11 +60,9 @@ def create_scatterplot(df_scatter: pd.DataFrame, filename: str) -> None:
     plt.suptitle("BABY'S FIRST YEAR MILK FEEDING", color=color_axis)
 
     ax[0].grid(alpha=0.2)
-    ax[0].invert_yaxis()
-    ax[0].set_yticks(ticks=[0, 180, 360, 540, 720, 900, 1080, 1260, 1440], labels=["0:00", "03:00", "06:00", "09:00", "12:00", "15:00", "18:00", "21:00", "0:00"])
-    ax[0].set_ylabel("TIME")
-    ax[0].set_ylim([0, 1440])
-    ax[0].set_xlabel(None)
+    ax[0].set_ylim([1440, 0])
+    ax[0].set_yticks(ticks=[1440, 1260, 1080, 900, 720, 540, 360, 180, 0], labels=["0:00", "21:00", "18:00", "15:00", "12:00", "09:00", "06:00", "03:00", "0:00"])
+    ax[0].set_ylabel("TIME")    
 
     ax[0].set_xlabel("WEEKS SINCE BIRTH")   
     ax[0].xaxis.set_label_position("top") 
